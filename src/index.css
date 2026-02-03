@@ -1,3 +1,4 @@
+/* Tailwind CSS directives - VS Code may show "unknown at rule" without Tailwind extension */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
