@@ -21,8 +21,7 @@ import reliefSingleDoubleImage from '../tents/relief tents/4.jpg';
 import reliefSingleSingleImage from '../tents/relief tents/5.jpg';
 // Marquee tent images
 import marqueeTentImage from '../tents/marqee tents/1.jpg';
-// Deluxe tent images - These are used in the productDatabase object below
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// Deluxe tent images - used via duluxTentImages in productDatabase
 import dulux101Image from '../tents/dulux tents/101.png';
 import dulux102Image from '../tents/dulux tents/102.png';
 import dulux103Image from '../tents/dulux tents/103.png';
@@ -41,7 +40,27 @@ import dulux115Image from '../tents/dulux tents/115.png';
 import dulux116Image from '../tents/dulux tents/116.png';
 import dulux117Image from '../tents/dulux tents/117.png';
 import dulux118Image from '../tents/dulux tents/118.png';
-/* eslint-enable @typescript-eslint/no-unused-vars */
+
+const duluxTentImages: Record<string, string> = {
+  'tents-dulex-ht101': dulux101Image,
+  'tents-dulex-ht102': dulux102Image,
+  'tents-dulex-ht103': dulux103Image,
+  'tents-dulex-ht104': dulux104Image,
+  'tents-dulex-ht105': dulux105Image,
+  'tents-dulex-ht106': dulux106Image,
+  'tents-dulex-ht107': dulux107Image,
+  'tents-dulex-ht108': dulux108Image,
+  'tents-dulex-ht109': dulux109Image,
+  'tents-dulex-ht110': dulux110Image,
+  'tents-dulex-ht111': dulux111Image,
+  'tents-dulex-ht112': dulux112Image,
+  'tents-dulex-ht113': dulux113Image,
+  'tents-dulex-ht114': dulux114Image,
+  'tents-dulex-ht115': dulux115Image,
+  'tents-dulex-ht116': dulux116Image,
+  'tents-dulex-ht117': dulux117Image,
+  'tents-dulex-ht118': dulux118Image,
+};
 // Shelter tent images - These are used in the productDatabase object below
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import shelter101Image from '../tents/shelter tents/1.png';
@@ -541,7 +560,7 @@ EASY TRANSPORTATION DUE TO FOLDABLE DESIGN`,
   'tents-dulex-ht101': {
     name: 'Arabic Deluxe and Relief Tents HT-101',
     description: 'premium arabic deluxe and relief tent designed for versatile use. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. perfect for various applications with two doors and two windows for ventilation.',
-    imageUrl: dulux101Image,
+    imageUrl: duluxTentImages['tents-dulex-ht101'],
     details: 'premium arabic deluxe and relief tent designed for versatile use. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. perfect for various applications with two doors and two windows for ventilation.',
     specifications: `SIZE: 4X4 YARDS
 CENTRAL HEIGHT: 8 FEET
@@ -564,7 +583,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht102': {
     name: 'Arabic Deluxe Tent HT-102',
     description: 'premium arabic deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks for enhanced durability.',
-    imageUrl: dulux102Image,
+    imageUrl: duluxTentImages['tents-dulex-ht102'],
     details: 'premium arabic deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks for enhanced durability.',
     specifications: `SIZE: 4X4 YARDS
 CENTRAL HEIGHT: 8 FEET
@@ -587,7 +606,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht103': {
     name: 'Arabic Deluxe Tent HT-103',
     description: 'premium arabic deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks and packed in cotton canvas.',
-    imageUrl: dulux103Image,
+    imageUrl: duluxTentImages['tents-dulex-ht103'],
     details: 'premium arabic deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks and packed in cotton canvas.',
     specifications: `SIZE: 4X4 YARDS
 CENTRAL HEIGHT: 8 FEET
@@ -610,7 +629,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht104': {
     name: 'Swiss Deluxe Tent HT-104',
     description: 'premium swiss deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks for enhanced stability.',
-    imageUrl: dulux104Image,
+    imageUrl: duluxTentImages['tents-dulex-ht104'],
     details: 'premium swiss deluxe tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and two windows, using iron sticks for enhanced stability.',
     specifications: `SIZE: 4X4 YARDS
 CENTRAL HEIGHT: 8 FEET
@@ -633,7 +652,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht105': {
     name: 'Family Round Tent HT-105',
     description: 'premium family round tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. compact design with one door and two windows, perfect for family use.',
-    imageUrl: dulux105Image,
+    imageUrl: duluxTentImages['tents-dulex-ht105'],
     details: 'premium family round tent with two-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. compact design with one door and two windows, perfect for family use.',
     specifications: `SIZE: 4X4 YARDS
 CENTRAL HEIGHT: 7 FEET
@@ -654,7 +673,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht106': {
     name: 'Arabic Deluxe Tent HT-106',
     description: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
-    imageUrl: dulux106Image,
+    imageUrl: duluxTentImages['tents-dulex-ht106'],
     details: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
     specifications: `SIZE: 6X4 YARDS
 CENTRAL HEIGHT: 8.5 FEET
@@ -677,7 +696,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht107': {
     name: 'Arabic Deluxe Tent HT-107',
     description: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
-    imageUrl: dulux107Image,
+    imageUrl: duluxTentImages['tents-dulex-ht107'],
     details: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
     specifications: `SIZE: 6X4 YARDS
 CENTRAL HEIGHT: 8.5 FEET
@@ -700,7 +719,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht108': {
     name: 'Arabic Deluxe Tent HT-108',
     description: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks for enhanced durability.',
-    imageUrl: dulux108Image,
+    imageUrl: duluxTentImages['tents-dulex-ht108'],
     details: 'premium arabic deluxe tent with larger size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks for enhanced durability.',
     specifications: `SIZE: 6X4 YARDS
 CENTRAL HEIGHT: 8.5 FEET
@@ -723,7 +742,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht109': {
     name: 'Arabic Deluxe Tent HT-109',
     description: 'premium arabic deluxe tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
-    imageUrl: dulux109Image,
+    imageUrl: duluxTentImages['tents-dulex-ht109'],
     details: 'premium arabic deluxe tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
     specifications: `SIZE: 5X5 YARDS
 CENTRAL HEIGHT: 9 FEET
@@ -748,7 +767,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht110': {
     name: 'Arabic Deluxe Tent HT-110',
     description: 'premium arabic deluxe tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
-    imageUrl: dulux110Image,
+    imageUrl: duluxTentImages['tents-dulex-ht110'],
     details: 'premium arabic deluxe tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
     specifications: `SIZE: 5X5 YARDS
 CENTRAL HEIGHT: 9 FEET
@@ -773,7 +792,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht111': {
     name: 'Arabic Deluxe Tent HT-111',
     description: 'premium arabic deluxe tent with three-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. larger size with two doors and four windows, using iron sticks for enhanced stability.',
-    imageUrl: dulux111Image,
+    imageUrl: duluxTentImages['tents-dulex-ht111'],
     details: 'premium arabic deluxe tent with three-fold construction. features cotton canvas outer fold and dyed printed sheeting inner fold. larger size with two doors and four windows, using iron sticks for enhanced stability.',
     specifications: `SIZE: 6X4 METER
 CENTRAL HEIGHT: 9 FEET
@@ -796,7 +815,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht112': {
     name: 'Swiss Arabic Deluxe Tent HT-112',
     description: 'premium swiss arabic deluxe tent with unique fabric construction. features bait shar fabric outer fold and sadu fabric inner fold. modern design with two doors and four windows, using iron sticks.',
-    imageUrl: dulux112Image,
+    imageUrl: duluxTentImages['tents-dulex-ht112'],
     details: 'premium swiss arabic deluxe tent with unique fabric construction. features bait shar fabric outer fold and sadu fabric inner fold. modern design with two doors and four windows, using iron sticks.',
     specifications: `SIZE: 6X4 METER
 CENTRAL HEIGHT: 3 METER
@@ -819,7 +838,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht113': {
     name: 'Family Round Tent HT-113',
     description: 'premium family round tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
-    imageUrl: dulux113Image,
+    imageUrl: duluxTentImages['tents-dulex-ht113'],
     details: 'premium family round tent with square design. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks with jamloon frame.',
     specifications: `SIZE: 5X5 YARDS
 CENTRAL HEIGHT: 9 FEET
@@ -844,7 +863,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht114': {
     name: 'Arabic Deluxe Tent HT-114',
     description: 'premium arabic deluxe tent with extended size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors, using iron sticks for enhanced durability.',
-    imageUrl: dulux114Image,
+    imageUrl: duluxTentImages['tents-dulex-ht114'],
     details: 'premium arabic deluxe tent with extended size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors, using iron sticks for enhanced durability.',
     specifications: `SIZE: 7X4 YARDS
 CENTRAL HEIGHT: 8.5 FEET
@@ -866,7 +885,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht115': {
     name: 'Arabic Deluxe Tent HT-115',
     description: 'premium arabic deluxe tent with unique fabric construction. features bait shar fabric outer fold and sadu fabric inner fold. larger size with two doors and four windows, using iron sticks.',
-    imageUrl: dulux115Image,
+    imageUrl: duluxTentImages['tents-dulex-ht115'],
     details: 'premium arabic deluxe tent with unique fabric construction. features bait shar fabric outer fold and sadu fabric inner fold. larger size with two doors and four windows, using iron sticks.',
     specifications: `SIZE: 7X5 METER
 CENTRAL HEIGHT: 3 METER
@@ -889,7 +908,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht116': {
     name: 'Arabic Deluxe Tent HT-116',
     description: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
-    imageUrl: dulux116Image,
+    imageUrl: duluxTentImages['tents-dulex-ht116'],
     details: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
     specifications: `SIZE: 8X5 YARDS
 CENTRAL HEIGHT: 9 FEET
@@ -912,7 +931,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht117': {
     name: 'Arabic Deluxe Tent HT-117',
     description: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
-    imageUrl: dulux117Image,
+    imageUrl: duluxTentImages['tents-dulex-ht117'],
     details: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using bamboo sticks.',
     specifications: `SIZE: 8X5 YARDS
 CENTRAL HEIGHT: 9 FEET
@@ -935,7 +954,7 @@ CUSTOM SHIPPING: ON REQUEST`,
   'tents-dulex-ht118': {
     name: 'Arabic Deluxe Tent HT-118',
     description: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks for enhanced durability.',
-    imageUrl: dulux118Image,
+    imageUrl: duluxTentImages['tents-dulex-ht118'],
     details: 'premium arabic deluxe tent with large size. features two-fold construction with cotton canvas outer fold and dyed printed sheeting inner fold. equipped with two doors and four windows, using iron sticks for enhanced durability.',
     specifications: `SIZE: 8X5 YARDS
 CENTRAL HEIGHT: 9 FEET
