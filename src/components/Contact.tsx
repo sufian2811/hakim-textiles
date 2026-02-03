@@ -28,6 +28,10 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
+      if (!supabase) {
+        setSubmitStatus('error');
+        return; // Form still shows; error message suggests email/phone
+      }
       const { error } = await supabase.from('contact_submissions').insert([formData]);
 
       if (error) throw error;
@@ -213,8 +217,10 @@ export default function Contact() {
               )}
 
               {submitStatus === 'error' && (
-                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                  There was an error sending your message. Please try again.
+                <div className="bg-amber-50 border border-amber-200 text-amber-800 px-4 py-3 rounded-lg">
+                  {supabase
+                    ? "There was an error sending your message. Please try again."
+                    : "Form submissions are not configured here. Please email us at info@hakimtextiles.com or call 0302-8024740 / WhatsApp."}
                 </div>
               )}
 

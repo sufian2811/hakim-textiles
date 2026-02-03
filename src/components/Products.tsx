@@ -14,6 +14,10 @@ export default function Products() {
 
   const fetchData = async () => {
     try {
+      if (!supabase) {
+        setLoading(false);
+        return;
+      }
       const [categoriesRes, productsRes] = await Promise.all([
         supabase.from('product_categories').select('*').order('display_order'),
         supabase.from('products').select('*').order('display_order'),
