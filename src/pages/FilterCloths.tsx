@@ -1,6 +1,6 @@
 import ProductCard from '../components/ProductCard';
 import AnimateIn from '../components/AnimateIn';
-import heroImage from '../assets/filter bag.jpg';
+import heroImage from '../FC/hero.jpeg';
 import fc1Image from '../FC/1.png';
 import fc2Image from '../FC/2.png';
 import fc3Image from '../FC/3.png';
@@ -29,7 +29,7 @@ export default function FilterCloths() {
         <div className="absolute inset-0 z-[1] bg-slate-900/70" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-lime-500/80 backdrop-blur-sm border border-lime-300/50 rounded-2xl p-6 md:p-8 shadow-xl opacity-0 animate-fade-in-up animate-fill-both">
+            <div className="bg-lime-500/80 backdrop-blur-sm border border-lime-300/50 rounded-2xl p-6 md:p-8 shadow-xl opacity-100 lg:opacity-0 lg:animate-fade-in-up lg:animate-fill-both">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 Filter Cloths
               </h1>

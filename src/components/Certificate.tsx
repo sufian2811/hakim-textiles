@@ -3,8 +3,10 @@ import { useInView } from '../hooks/useInView';
 
 export default function Certificate() {
   const [sectionRef, inView] = useInView<HTMLElement>();
+  const [fbrRef, fbrInView] = useInView<HTMLElement>();
 
   return (
+    <>
     <section ref={sectionRef} className="py-20 bg-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -74,5 +76,64 @@ export default function Certificate() {
         </div>
       </div>
     </section>
+
+    {/* FBR Certificate - Image on Right, Text on Left */}
+    <section ref={fbrRef} className="py-20 bg-gray-50 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Description Text - Left Side */}
+          <div
+            className={`order-2 md:order-1 space-y-6 transition-all duration-700 ease-out ${
+              fbrInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
+            }`}
+          >
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                FBR Certified
+              </h2>
+              <div className="w-24 h-1 bg-lime-500 mb-6" />
+            </div>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p className="text-lg">
+                Ch. Hakim Ali Ansari Enterprises is registered with the Federal Board of Revenue (FBR), demonstrating our commitment to transparency and compliance with national tax and regulatory standards.
+              </p>
+              <p className="text-lg">
+                Our FBR registration ensures that we operate with full legal compliance and accountability, giving our business partners and customers confidence in every transaction.
+              </p>
+            </div>
+            <div className="pt-4">
+              <div className="inline-flex items-center space-x-2 bg-lime-50 px-6 py-3 rounded-lg border border-lime-200">
+                <svg className="w-6 h-6 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-lime-700 font-semibold">Registered & Compliant</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Certificate Image - Right Side */}
+          <div
+            className={`order-1 md:order-2 flex justify-center md:justify-end transition-all duration-700 ease-out delay-150 ${
+              fbrInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+            }`}
+          >
+            <div className="relative w-full max-w-lg">
+              <div className="bg-white rounded-lg shadow-2xl p-4 hover:shadow-3xl transition-shadow duration-300">
+                <img
+                  src="/fbr.png"
+                  alt="FBR Certificate - Ch Hakim Ali Ansari Enterprises"
+                  className="w-full h-auto rounded-lg object-contain"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }

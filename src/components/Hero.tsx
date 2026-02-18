@@ -19,14 +19,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 opacity-0 animate-hero-text animate-fill-both">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 opacity-100 lg:opacity-0 lg:animate-hero-text lg:animate-fill-both">
           Premium Quality Textiles
         </h1>
-        <p className="text-xl md:text-2xl text-lime-100 mb-8 max-w-3xl mx-auto opacity-0 animate-fade-in-up animate-fill-both animate-delay-300">
-          Crafting excellence in fabrics with over 30 years of industry expertise.
+        <p className="text-xl md:text-2xl text-lime-100 mb-8 max-w-3xl mx-auto opacity-100 lg:opacity-0 lg:animate-fade-in-up lg:animate-fill-both lg:animate-delay-300">
+          Crafting excellence in fabrics with over 40 years of industry expertise.
           Your trusted partner for superior textile solutions.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up animate-fill-both animate-delay-500">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-100 lg:opacity-0 lg:animate-fade-in-up lg:animate-fill-both lg:animate-delay-500">
           <button
             onClick={() => navigate('/about')}
             className="bg-white text-lime-700 px-8 py-4 rounded-lg font-semibold hover:bg-lime-50 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"

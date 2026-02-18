@@ -107,7 +107,7 @@ export default function About() {
             </h3>
             <div className="text-gray-600 leading-relaxed space-y-4 lowercase">
               <p>
-                The company was established in 1990. our traditional business model is based on the latest market trends, located in the city of pakistan named "kasur". the city is considered as the hub of textile industry. ch hakim ali enterprises is the well-known and prominent in the production of textile products like conveyor belt, filter cloth, filter bags, tents and canvas.
+                The company was established in 1984. our traditional business model is based on the latest market trends, located in the city of pakistan named "kasur". the city is considered as the hub of textile industry. ch hakim ali enterprises is the well-known and prominent in the production of textile products like conveyor belt, filter cloth, filter bags, tents and canvas.
               </p>
               <p>
                 Over the years, we have built a strong reputation for delivering high-quality textile products that meet the diverse needs of our clients. our commitment to excellence and innovation has made us a trusted name in the industry, serving customers both locally and internationally.
